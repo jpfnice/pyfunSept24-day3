@@ -1,0 +1,22 @@
+City Temperature
+Gland 23.4
+Nyon 23.6
+Geneva 22.8
+Lausanne 24.4
+Versoix 23.4
+Gland twenty
+Gland
+Abc def
+Nyon 21.8
+Geneva 22.8
+Lausanne 28.4
+Gland 22.9
+Nyon 22.8
+Geneva 23.2
+Lausanne 23.5
+Versoix 22.9
+Gland 12.9
+Nyon 28.8
+Geneva 13.8
+Lausanne 20.6
+Versoix 20.2
