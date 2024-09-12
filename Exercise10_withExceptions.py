@@ -10,7 +10,6 @@ class StackEmptyError(StackError):
 
 class Stack:
     def __init__(self, maxi):
-        # definition and initialization of the 2 attributes
         if isinstance(maxi, int) and maxi > 0:
             self.maximumSize=maxi
         else:
@@ -44,7 +43,6 @@ class Stack:
     
 try:
     s1=Stack(10) # s1 is a Stack with a maximum size of 10
-
     s1.push(23)
     s1.push("Hello")
     s1.push(True)

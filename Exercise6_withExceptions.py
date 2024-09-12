@@ -32,7 +32,7 @@ def isPrime(number):
 
     Raises
     ------
-    ArgumentError if the arguement received is not an int.
+    ArgumentError if the argument received is not an int.
 
     Returns
     -------
