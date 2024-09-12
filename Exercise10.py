@@ -9,7 +9,8 @@ When you insert a new element in a Stack it is always placed "on top" of the Sta
 
 Attributes:
     maximumSize: an int
-    data: an list
+    data: a list to hold the elements stored in the Stack
+    
 Methods:
     __init__(self, maxSize) -> Nothing to return
     __repr__(self) -> return a str
@@ -35,13 +36,14 @@ class Stack:
     
     def __len__(self):
         # returns the length of the Stack (the length of data)
-        return len(self.data)
+        return len(self.data) 
     
     def push(self, element):
-        # add a element at the end of data if the maximumSize is not
+        # add an element at the end of data if the maximumSize is not
         # exceeded 
         # if the maximumSize is reached, push() print an error message 
         if len(self) < self.maximumSize:
+        # or if len(self.data) < self.maximumSize:
             self.data.append(element)
         else:
             print("Error: maximum size reached !!!")
@@ -51,6 +53,7 @@ class Stack:
         # if data is empty, pop() print an error message and return 
         # a None value
         if len(self) == 0 :
+        # or if len(self.data) == 0:
             print("Error: the Stack is empty !!!")
             return None
         else:
