@@ -19,6 +19,44 @@ Methods:
     
 """
 
+class Stack:
+    def __init__(self, maxi):
+        # definition and initialization of the 2 attributes
+        if isinstance(maxi, int) and maxi > 0:
+            self.maximumSize=maxi
+        else:
+            print("Wrong max size given !!")
+            self.maximumSize=10
+        self.data=[]
+        
+    def __repr__(self):
+        # return a string representation of the stack
+        return f"({len(self)}/{self.maximumSize}) {self.data}"
+    
+    def __len__(self):
+        # returns the length of the Stack (the length of data)
+        return len(self.data)
+    
+    def push(self, element):
+        # add a element at the end of data if the maximumSize is not
+        # exceeded 
+        # if the maximumSize is reached, push() print an error message 
+        if len(self) < self.maximumSize:
+            self.data.append(element)
+        else:
+            print("Error: maximum size reached !!!")
+            
+    def pop(self):   
+        # return and remove the element currently at the end of data 
+        # if data is empty, pop() print an error message and return 
+        # a None value
+        if len(self) == 0 :
+            print("Error: the Stack is empty !!!")
+            return None
+        else:
+            return self.data.pop()
+    
+    
 s1=Stack(10) # s1 is a Stack with a maximum size of 10
 
 s1.push(23)
